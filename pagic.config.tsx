@@ -1,7 +1,6 @@
 import { React } from 'https://deno.land/x/pagic@v1.1.1/mod.ts';
+
 export default {
-  srcDir: 'docs',
-  outDir: 'public',
   include: ['README.md', 'docs'],
   exclude: ['examples'],
   theme: 'docs',
@@ -21,5 +20,4 @@ export default {
     editOnGitHub: true,
     backToTop: true,
   },
-  port: 8001,
 };
