@@ -24,7 +24,8 @@ jobs:
       - name: Deploy gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
-          external_repository: asa1253/asa1253.github.io
+          PERSONAL_TOKEN: ${{ secrets.GH_TOKEN }}
+          PUBLISH_REPOSITORY: asa1253/asa1253.github.io
+          BRANCH: master
           publish_dir: ./dist
           cname: pcdn.eu.org
