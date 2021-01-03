@@ -24,7 +24,7 @@ jobs:
           export DENO_INSTALL="/home/runner/.deno"
           export PATH="$DENO_INSTALL/bin:$PATH"
           deno --version
-          deno install --unstable --allow-read --allow-write --allow-net --allow-run -n pagic https://deno.land/x/pagic@v1.0.0/mod.ts
+          deno install --unstable --allow-read --allow-write --allow-net --allow-run -n pagic https://deno.land/x/pagic@v1.1.1/mod.ts
           pagic build
 
       - name: Deploy gh-pages
@@ -32,4 +32,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: ts.xcatliu.com
+          cname: pcdn.eu.org
