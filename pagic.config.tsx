@@ -1,26 +1,30 @@
 import { React } from 'https://deno.land/x/pagic@v1.1.1/mod.ts';
 
 export default {
-  srcDir: '.',
+  srcDir: 'docs',
+  outDir: 'public',
+  include: ['README.md', 'docs'],
   exclude: ['examples'],
   theme: 'docs',
-  plugins: ['sidebar', 'prev_next', 'ga'],
+  plugins: ['sidebar', 'prev_next', 'gitalk', 'ga'],
   title: '网址收藏',
-  description: '从网络收集而来',
-  github: 'https://github.com/xcatliu/typescript-tutorial',
+  description: '个人收藏备份。',
+  github: 'https://github.com/asa1253/asa1253.github.io',
   head: <link rel="icon" type="image/png" href="/favicon.png" />,
   nav: [
-    {
-      text: '赞助作者',
-      link: 'https://github.com/xcatliu/buy-me-a-coffee',
-      target: '_blank',
-      popover: (
-        <>
-          <img src="/assets/wechat.jpg" width="256" style={{ marginRight: '1rem', verticalAlign: 'top' }} />
-          <img src="/assets/alipay.jpg" width="256" style={{ verticalAlign: 'top' }} />
-        </>
-      ),
-    },
+    //{
+    //  text: '加入 QQ 群',
+    //  link: 'https://jq.qq.com/?_wv=1027&k=5nkkFCl',
+    //  target: '_blank',
+    //  popover: (
+    //    <>
+    //      <p style={{ marginTop: 0, marginBottom: '1rem', width: 256 }}>
+    //        一群（767142358）已满，请扫码加二群（706191218）
+    //     </p>
+    //      <img src="/assets/join-qq.jpg" width="256" />
+    //    </>
+    //  ),
+    //},
     {
       text: '本网站使用 Pagic 构建',
       link: 'https://github.com/xcatliu/pagic',
@@ -95,13 +99,16 @@ export default {
   //       }}
   //     />
   //   ),
- //  gitalk: {
- //    clientID: '29aa4941759fc887ed4f',
- //   clientSecret: '33e355efdf3a1959624506a5d88311145208471b',
- //  repo: 'typescript-tutorial',
- //  owner: 'xcatliu',
- //  admin: ['asa1253'],
- //  pagerDirection: 'first',
- // },
+  //gitalk: {
+  //  clientID: '29aa4941759fc887ed4f',
+  //  clientSecret: '33e355efdf3a1959624506a5d88311145208471b',
+  //  repo: 'typescript-tutorial',
+  //  owner: 'xcatliu',
+  //  admin: ['xcatliu'],
+  //  pagerDirection: 'first',
+  //},
+  //ga: {
+  //  id: 'UA-45256157-14',
+  //},
   port: 8001,
 };
