@@ -25,7 +25,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           PERSONAL_TOKEN: ${{ secrets.GH_TOKEN }}
-          PUBLISH_REPOSITORY: asa1253/asa1253.github.io
-          BRANCH: master
+          external_repository: asa1253/asa1253.github.io
+          publish_branch: master
           publish_dir: ./dist
           cname: pcdn.eu.org
