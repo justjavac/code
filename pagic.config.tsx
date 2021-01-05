@@ -24,9 +24,12 @@ export default {
         children: [
           'linux/linux.md',
         ],
+      },   
+      {    
         link: 'video/README.md',
         children: [
-          'linux/linux.md',
+          'video/video.md',
+          'video/pt.md'
         ],
-      },
+  },
 };
