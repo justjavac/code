@@ -12,11 +12,23 @@ export default {
   head: <link rel="icon" type="image/png" href="/favicon.png" />,
   nav: [
     {
-      text: '本网站使用 Pagic 构建',
-      link: 'https://github.com/xcatliu/pagic',
+      text: 'linux',
+      link: '/docs/index.html',
       target: '_blank',
     },
   ],
+  sidebar: {
+    '/': [
+      {
+        link: 'linux/README.md',
+        children: [
+          'linux/linux.md',
+        ],
+        link: 'video/README.md',
+        children: [
+          'linux/linux.md',
+        ],
+      },
   tools: {
     editOnGitHub: true,
     backToTop: true,
