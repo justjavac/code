@@ -10,13 +10,6 @@ export default {
   description: '个人收藏备份。',
   github: 'https://github.com/asa1253/asa1253.github.io',
   head: <link rel="icon" type="image/png" href="/favicon.png" />,
-  nav: [
-    {
-      text: 'linux',
-      link: '/docs/README.md',
-      target: '_blank',
-    },
-  ],
   sidebar: {
     '/': [
       {
