@@ -13,7 +13,7 @@ export default {
   nav: [
     {
       text: 'linux',
-      link: '/docs/index.html',
+      link: '/docs/README.md',
       target: '_blank',
     },
   ],
