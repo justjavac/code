@@ -29,8 +29,4 @@ export default {
           'linux/linux.md',
         ],
       },
-  tools: {
-    editOnGitHub: true,
-    backToTop: true,
-  },
 };
