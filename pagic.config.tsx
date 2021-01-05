@@ -5,11 +5,18 @@ export default {
   include: ['README.md', 'docs'],
   exclude: ['examples'],
   theme: 'docs',
-  plugins: ['sidebar', 'prev_next', 'gitalk', 'ga'],
-  title: '网址收藏',
+  plugins: ['sidebar', 'prev_next', ],
+  title: 'Bookmarks',
   description: '个人收藏备份。',
   github: 'https://github.com/asa1253/asa1253.github.io',
   head: <link rel="icon" type="image/png" href="/favicon.png" />,
+  nav: [
+    {
+      text: 'linux',
+      link: '/docs/index.html',
+      target: '_blank',
+    },
+  ],
   sidebar: {
     '/': [
       {
