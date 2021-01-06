@@ -19,12 +19,18 @@ export default {
       },
   ],
   sidebar: {
-    '/docs/': [
+    '/': [
       {
         link: 'linux/README.md',
         children: [
           'linux/linux.md',
         ],
       },   
-  },
+      {
+        link: 'video/README.md',
+        children: [
+          'video/video.md',
+          'video/pt.md',
+        ],
+      },   
 };
