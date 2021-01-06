@@ -32,5 +32,6 @@ export default {
           'video/video.md',
           'video/pt.md',
         ],
-      },   
+      }, 
+  },   
 };
