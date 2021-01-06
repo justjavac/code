@@ -20,14 +20,20 @@ export default {
   ],
   sidebar: {
     '/': [
-      'about/README.md',
       {
-        link: 'about/README.md',
-        children: ['about/README.md'],
+        link: 'linux/README.md',
+        children: ['linux/linux.md'],
       },
       {
         text: 'linux/README.md',
         children: ['linux/linux.md'],
+      },
+      {
+        text: 'video/README.md',
+        children: [
+          'video/video.md',
+          'video/pt.md',
+        ],
       },
     ],
   },
