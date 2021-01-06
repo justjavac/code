@@ -10,12 +10,13 @@ export default {
   description: '个人收藏备份。',
   github: 'https://github.com/asa1253/asa1253.github.io',
   head: <link rel="icon" type="image/png" href="/favicon.png" />,
+
   nav: [
-    {
-      text: 'linux',
-      link: '/docs/index.html',
-      target: '_blank',
-    },
+      {
+          text: '本网站使用 Pagic 构建',
+          link: 'https://github.com/xcatliu/pagic',
+          target: '_blank',
+      },
   ],
   sidebar: {
     '/docs/': [
@@ -25,11 +26,5 @@ export default {
           'linux/linux.md',
         ],
       },   
-      {    
-        link: 'video/README.md',
-        children: [
-          'video/video.md',
-          'video/pt.md'
-        ],
   },
 };
