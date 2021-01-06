@@ -18,7 +18,7 @@ export default {
     },
   ],
   sidebar: {
-    '/': [
+    '/docs/': [
       {
         link: 'linux/README.md',
         children: [
