@@ -33,5 +33,5 @@ export default {
           'video/pt.md',
         ],
       }, 
-  },   
+  ],
 };
